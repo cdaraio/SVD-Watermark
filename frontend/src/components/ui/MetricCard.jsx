@@ -31,10 +31,10 @@ export default function MetricCard({
   };
 
   const badgeLabels = {
-    good:    "Excellent",
-    warn:    "Acceptable",
-    bad:     "Poor",
-    neutral: null,
+  good:    "Ottimo",
+  warn:    "Accettabile",
+  bad:     "Scarso",
+  neutral: null,
   };
 
   return (
