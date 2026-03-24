@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background tile -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines (cyber flavour) -->
+  <line x1="16" y1="2" x2="16" y2="30" stroke="#00FF66" stroke-width="0.2" opacity="0.18"/>
+  <line x1="2" y1="16" x2="30" y2="16" stroke="#00FF66" stroke-width="0.2" opacity="0.18"/>
+
+  <!-- Outer hexagon ring -->
+  <polygon
+    points="16,3 27,9 27,23 16,29 5,23 5,9"
+    fill="none" stroke="#00FF66" stroke-width="1.2"
+    stroke-linejoin="round" opacity="0.55" filter="url(#glow)"/>
+
+  <!-- Inner hexagon -->
+  <polygon
+    points="16,7.5 23.5,11.75 23.5,20.25 16,24.5 8.5,20.25 8.5,11.75"
+    fill="none" stroke="#00FF66" stroke-width="0.7"
+    stroke-linejoin="round" opacity="0.25"/>
+
+  <!-- Bold "W" as a pure geometric path — no font dependency -->
+  <polyline
+    points="7.5,11 11,22 16,15.5 21,22 24.5,11"
+    fill="none" stroke="#00FF66" stroke-width="2.4"
+    stroke-linecap="round" stroke-linejoin="round"
+    filter="url(#glow)"/>
+</svg>
