@@ -24,7 +24,7 @@ const MENU_ITEMS = [
 // Barra laterale di navigazione
 export default function Sidebar({ activeView, onNavigate }) {
   return (
-    <aside className="flex flex-col w-64 shrink-0 h-full bg-[#050505] border-r border-panel-border">
+    <aside className="flex flex-col w-72 shrink-0 h-full bg-[#050505] border-r border-panel-border">
       
       {/* Logo e Titolo del progetto */}
       <div className="flex items-center gap-3 px-5 py-5 border-b border-panel-border">
