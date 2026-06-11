@@ -1,0 +1,3110 @@
+[
+  {
+    "name": "airplaneU2",
+    "best_alpha": 0.25,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 52.03,
+        "ssim": 0.99764,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.18227
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 52.022,
+        "ssim": 0.99764,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.18189
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.696,
+        "ssim": 0.99746,
+        "nc_no_attack": 0.37975,
+        "ber_no_attack": 0.08838,
+        "nc_mean_attacks": 0.33806
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.118,
+        "ssim": 0.99738,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.58996
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 50.938,
+        "ssim": 0.99737,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.60007
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.271,
+        "ssim": 0.99712,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.61443
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.326,
+        "ssim": 0.99685,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.64247
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.863,
+        "ssim": 0.99677,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.64381
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.201,
+        "ssim": 0.99647,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65264
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.392,
+        "ssim": 0.99611,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66011
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.809,
+        "ssim": 0.99589,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66525
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.222,
+        "ssim": 0.99554,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66477
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.579,
+        "ssim": 0.99513,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67076
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 45.016,
+        "ssim": 0.99477,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67262
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.491,
+        "ssim": 0.99436,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.677
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 43.969,
+        "ssim": 0.99391,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67851
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.467,
+        "ssim": 0.99346,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67984
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 42.999,
+        "ssim": 0.99298,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68267
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.556,
+        "ssim": 0.99248,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68583
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.121,
+        "ssim": 0.99195,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68817
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 41.705,
+        "ssim": 0.9914,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69082
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.312,
+        "ssim": 0.99086,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69296
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 40.932,
+        "ssim": 0.99028,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69547
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.563,
+        "ssim": 0.98968,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.6969
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.215,
+        "ssim": 0.9891,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70266
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 39.877,
+        "ssim": 0.98847,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70374
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.547,
+        "ssim": 0.98783,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70707
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.233,
+        "ssim": 0.9872,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70957
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 38.927,
+        "ssim": 0.98654,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71185
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.631,
+        "ssim": 0.98587,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71536
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.344,
+        "ssim": 0.98521,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71879
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.068,
+        "ssim": 0.98452,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71987
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 37.798,
+        "ssim": 0.98383,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7249
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.536,
+        "ssim": 0.98314,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72741
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.28,
+        "ssim": 0.98243,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72825
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.034,
+        "ssim": 0.98172,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72988
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 36.794,
+        "ssim": 0.98101,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73653
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.559,
+        "ssim": 0.98029,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73806
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.331,
+        "ssim": 0.97957,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73997
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.108,
+        "ssim": 0.97884,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7441
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 35.891,
+        "ssim": 0.97812,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74433
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.678,
+        "ssim": 0.97738,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74938
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.472,
+        "ssim": 0.97666,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75256
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.268,
+        "ssim": 0.97592,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75521
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.071,
+        "ssim": 0.97519,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76004
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 34.877,
+        "ssim": 0.97446,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76036
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 34.688,
+        "ssim": 0.97373,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76496
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.503,
+        "ssim": 0.97299,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76997
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.32,
+        "ssim": 0.97226,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7721
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.141,
+        "ssim": 0.97153,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77376
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 37.148
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.44706,
+        "ber": 0.37183,
+        "psnr_attack": 21.314
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.35434,
+        "ber": 0.68237,
+        "psnr_attack": 17.013
+      },
+      {
+        "attack": "cropping",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 35.66
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.40113,
+        "ber": 0.18188,
+        "psnr_attack": 20.318
+      }
+    ]
+  },
+  {
+    "name": "cablecar",
+    "best_alpha": 0.25,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 52.001,
+        "ssim": 0.99858,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.17637
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 51.979,
+        "ssim": 0.99858,
+        "nc_no_attack": 0.08422,
+        "ber_no_attack": 0.10254,
+        "nc_mean_attacks": 0.19948
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.678,
+        "ssim": 0.99851,
+        "nc_no_attack": 0.53262,
+        "ber_no_attack": 0.07397,
+        "nc_mean_attacks": 0.3802
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.129,
+        "ssim": 0.99846,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.58287
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 50.846,
+        "ssim": 0.99844,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.60009
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.263,
+        "ssim": 0.99835,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.61307
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.296,
+        "ssim": 0.99821,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63996
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.826,
+        "ssim": 0.99816,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.64444
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.213,
+        "ssim": 0.99805,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.6475
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.304,
+        "ssim": 0.99784,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65929
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.801,
+        "ssim": 0.99775,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66781
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.242,
+        "ssim": 0.99761,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66734
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.485,
+        "ssim": 0.99735,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67324
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 44.991,
+        "ssim": 0.99723,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67753
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.518,
+        "ssim": 0.99706,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.6819
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 43.892,
+        "ssim": 0.99676,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68731
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.435,
+        "ssim": 0.99659,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68706
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 43.016,
+        "ssim": 0.9964,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69577
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.498,
+        "ssim": 0.99607,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70002
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.088,
+        "ssim": 0.99586,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70253
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 41.713,
+        "ssim": 0.99564,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70412
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.284,
+        "ssim": 0.9953,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71005
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 40.9,
+        "ssim": 0.99504,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71987
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.57,
+        "ssim": 0.9948,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71984
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.217,
+        "ssim": 0.99448,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72432
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 39.842,
+        "ssim": 0.99414,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73266
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.545,
+        "ssim": 0.99388,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73595
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.245,
+        "ssim": 0.99356,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73484
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 38.895,
+        "ssim": 0.99317,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74075
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.625,
+        "ssim": 0.99289,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74558
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.354,
+        "ssim": 0.99256,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75128
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.039,
+        "ssim": 0.99216,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75392
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 37.792,
+        "ssim": 0.99185,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75816
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.542,
+        "ssim": 0.99151,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75889
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.257,
+        "ssim": 0.99109,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76076
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.027,
+        "ssim": 0.99077,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76651
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 36.8,
+        "ssim": 0.99042,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76584
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.538,
+        "ssim": 0.98999,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77389
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.321,
+        "ssim": 0.98964,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77521
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.115,
+        "ssim": 0.98929,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77728
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 35.872,
+        "ssim": 0.98885,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78478
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.67,
+        "ssim": 0.98849,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78564
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.477,
+        "ssim": 0.98813,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79081
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.26,
+        "ssim": 0.98769,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79156
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.065,
+        "ssim": 0.98732,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79171
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 34.881,
+        "ssim": 0.98694,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79442
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 34.688,
+        "ssim": 0.98652,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80102
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.497,
+        "ssim": 0.98613,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80021
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.326,
+        "ssim": 0.98575,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80187
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.15,
+        "ssim": 0.98535,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80347
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 36.797
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.62526,
+        "ber": 0.11768,
+        "psnr_attack": 20.694
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.45297,
+        "ber": 0.3125,
+        "psnr_attack": 17.513
+      },
+      {
+        "attack": "cropping",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 21.16
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.2568,
+        "ber": 0.41943,
+        "psnr_attack": 13.681
+      }
+    ]
+  },
+  {
+    "name": "cornfield",
+    "best_alpha": 0.26,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 52.045,
+        "ssim": 0.99868,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.16407
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 52.034,
+        "ssim": 0.99868,
+        "nc_no_attack": 0.04862,
+        "ber_no_attack": 0.10303,
+        "nc_mean_attacks": 0.17717
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.762,
+        "ssim": 0.99864,
+        "nc_no_attack": 0.45611,
+        "ber_no_attack": 0.08179,
+        "nc_mean_attacks": 0.33139
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.139,
+        "ssim": 0.99859,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.56264
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 50.948,
+        "ssim": 0.99858,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.57859
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.397,
+        "ssim": 0.99852,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.59825
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.273,
+        "ssim": 0.99839,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63085
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.883,
+        "ssim": 0.99837,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.6276
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.347,
+        "ssim": 0.99831,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63406
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.261,
+        "ssim": 0.99811,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65146
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.824,
+        "ssim": 0.99806,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65788
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.347,
+        "ssim": 0.99799,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65359
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.428,
+        "ssim": 0.99773,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66875
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 45.011,
+        "ssim": 0.99767,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67178
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.589,
+        "ssim": 0.99758,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67869
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 43.838,
+        "ssim": 0.99728,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68618
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.446,
+        "ssim": 0.9972,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68525
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 43.074,
+        "ssim": 0.99709,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68864
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.472,
+        "ssim": 0.99677,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70311
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.083,
+        "ssim": 0.99665,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71005
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 41.756,
+        "ssim": 0.99653,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71159
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.291,
+        "ssim": 0.99624,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71372
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 40.889,
+        "ssim": 0.99604,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72591
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.598,
+        "ssim": 0.9959,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7302
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.236,
+        "ssim": 0.99566,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72833
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 39.83,
+        "ssim": 0.99538,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74181
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.567,
+        "ssim": 0.99523,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74804
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.273,
+        "ssim": 0.99501,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75211
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 38.884,
+        "ssim": 0.99467,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75905
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.639,
+        "ssim": 0.9945,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75989
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.39,
+        "ssim": 0.99431,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76424
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.024,
+        "ssim": 0.99391,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77089
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 37.799,
+        "ssim": 0.99374,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77635
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.577,
+        "ssim": 0.99355,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77688
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.245,
+        "ssim": 0.99314,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78515
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.031,
+        "ssim": 0.99295,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78285
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 36.83,
+        "ssim": 0.99275,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7903
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.532,
+        "ssim": 0.99235,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79498
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.322,
+        "ssim": 0.99213,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80107
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.137,
+        "ssim": 0.99193,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80389
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 35.875,
+        "ssim": 0.99154,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81017
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.667,
+        "ssim": 0.99128,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81436
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.496,
+        "ssim": 0.99109,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81484
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.264,
+        "ssim": 0.99072,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81936
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.058,
+        "ssim": 0.99043,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81918
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 34.895,
+        "ssim": 0.99022,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.82541
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 34.694,
+        "ssim": 0.98988,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.82463
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.487,
+        "ssim": 0.98955,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83032
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.334,
+        "ssim": 0.98934,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.831
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.155,
+        "ssim": 0.98903,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83371
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 35.396
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.67737,
+        "ber": 0.0957,
+        "psnr_attack": 20.317
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.50392,
+        "ber": 0.22437,
+        "psnr_attack": 18.466
+      },
+      {
+        "attack": "cropping",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 27.05
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.26919,
+        "ber": 0.40601,
+        "psnr_attack": 13.706
+      }
+    ]
+  },
+  {
+    "name": "fruits",
+    "best_alpha": 0.26,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 52.14,
+        "ssim": 0.99826,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.16842
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 52.135,
+        "ssim": 0.99826,
+        "nc_no_attack": 0.08422,
+        "ber_no_attack": 0.10254,
+        "nc_mean_attacks": 0.19424
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.877,
+        "ssim": 0.99815,
+        "nc_no_attack": 0.28765,
+        "ber_no_attack": 0.09473,
+        "nc_mean_attacks": 0.28673
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.176,
+        "ssim": 0.99805,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.56841
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 51.064,
+        "ssim": 0.99803,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.58404
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.525,
+        "ssim": 0.99788,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.59606
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.252,
+        "ssim": 0.9976,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.6343
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.962,
+        "ssim": 0.99754,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63555
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.421,
+        "ssim": 0.99734,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63535
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.29,
+        "ssim": 0.99695,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65176
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.853,
+        "ssim": 0.99681,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65589
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.385,
+        "ssim": 0.99658,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65843
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.504,
+        "ssim": 0.99612,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66423
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 45.021,
+        "ssim": 0.99589,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66384
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.606,
+        "ssim": 0.99563,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66723
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 43.931,
+        "ssim": 0.99512,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66945
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.459,
+        "ssim": 0.99482,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67755
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 43.079,
+        "ssim": 0.99451,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68307
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.545,
+        "ssim": 0.99398,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68634
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.109,
+        "ssim": 0.9936,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69311
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 41.756,
+        "ssim": 0.99324,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69371
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.319,
+        "ssim": 0.9927,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69783
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 40.917,
+        "ssim": 0.99224,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70101
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.598,
+        "ssim": 0.99186,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70437
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.224,
+        "ssim": 0.99131,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70621
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 39.866,
+        "ssim": 0.9908,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71696
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.569,
+        "ssim": 0.99037,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71846
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.244,
+        "ssim": 0.98982,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 38.922,
+        "ssim": 0.98927,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72621
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.645,
+        "ssim": 0.9888,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72619
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.356,
+        "ssim": 0.98826,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72978
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.064,
+        "ssim": 0.98769,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73895
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 37.805,
+        "ssim": 0.98718,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74042
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.546,
+        "ssim": 0.98663,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74219
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.282,
+        "ssim": 0.98604,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74895
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.039,
+        "ssim": 0.98551,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74767
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 36.803,
+        "ssim": 0.98496,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75147
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.561,
+        "ssim": 0.98436,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75525
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.333,
+        "ssim": 0.98382,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75711
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.117,
+        "ssim": 0.98326,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76023
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 35.892,
+        "ssim": 0.98266,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76146
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.679,
+        "ssim": 0.98209,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76405
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.478,
+        "ssim": 0.98154,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77044
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.272,
+        "ssim": 0.98094,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77113
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.073,
+        "ssim": 0.98037,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77561
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 34.88,
+        "ssim": 0.9798,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77675
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 34.692,
+        "ssim": 0.97922,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7759
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.504,
+        "ssim": 0.97864,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78136
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.323,
+        "ssim": 0.97807,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78575
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.146,
+        "ssim": 0.9775,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78795
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 38.452
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.5939,
+        "ber": 0.16016,
+        "psnr_attack": 20.481
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.45136,
+        "ber": 0.34375,
+        "psnr_attack": 18.212
+      },
+      {
+        "attack": "cropping",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 30.025
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.24675,
+        "ber": 0.39478,
+        "psnr_attack": 17.724
+      }
+    ]
+  },
+  {
+    "name": "girl",
+    "best_alpha": 0.25,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 52.058,
+        "ssim": 0.99877,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.15587
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 52.058,
+        "ssim": 0.99877,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.14977
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.843,
+        "ssim": 0.99871,
+        "nc_no_attack": 0.26184,
+        "ber_no_attack": 0.09619,
+        "nc_mean_attacks": 0.25941
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.095,
+        "ssim": 0.99864,
+        "nc_no_attack": 0.99882,
+        "ber_no_attack": 0.00024,
+        "nc_mean_attacks": 0.57187
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 51.039,
+        "ssim": 0.99863,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.57809
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.573,
+        "ssim": 0.99856,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.59409
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.156,
+        "ssim": 0.99837,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63017
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.968,
+        "ssim": 0.99836,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63329
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.49,
+        "ssim": 0.99826,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63403
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.182,
+        "ssim": 0.99798,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65499
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.867,
+        "ssim": 0.99795,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65746
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.455,
+        "ssim": 0.99784,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.65483
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.407,
+        "ssim": 0.99748,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66419
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 45.022,
+        "ssim": 0.99741,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67076
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.661,
+        "ssim": 0.99729,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67638
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 43.862,
+        "ssim": 0.99689,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67872
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.447,
+        "ssim": 0.99677,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68615
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 43.121,
+        "ssim": 0.99663,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.6913
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.498,
+        "ssim": 0.99622,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69575
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.092,
+        "ssim": 0.99603,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70876
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 41.788,
+        "ssim": 0.99586,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70859
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.3,
+        "ssim": 0.99547,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.71886
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 40.9,
+        "ssim": 0.9952,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72453
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.622,
+        "ssim": 0.99502,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72842
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.225,
+        "ssim": 0.99464,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73216
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 39.849,
+        "ssim": 0.99429,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73993
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.584,
+        "ssim": 0.99408,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74491
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.253,
+        "ssim": 0.99372,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74745
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 38.904,
+        "ssim": 0.99332,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74892
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.656,
+        "ssim": 0.99309,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75931
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.365,
+        "ssim": 0.99273,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7638
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.051,
+        "ssim": 0.9923,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76224
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 37.813,
+        "ssim": 0.99203,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76861
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.554,
+        "ssim": 0.99167,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.77522
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.267,
+        "ssim": 0.99123,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78013
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.042,
+        "ssim": 0.99092,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78508
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 36.81,
+        "ssim": 0.99056,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78713
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.549,
+        "ssim": 0.99012,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79077
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.333,
+        "ssim": 0.98978,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79336
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.124,
+        "ssim": 0.98943,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79819
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 35.885,
+        "ssim": 0.98898,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80055
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.678,
+        "ssim": 0.98861,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80169
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.482,
+        "ssim": 0.98825,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80609
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.271,
+        "ssim": 0.98782,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80813
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.069,
+        "ssim": 0.98742,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81117
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 34.885,
+        "ssim": 0.98705,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81396
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 34.694,
+        "ssim": 0.98663,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81876
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.501,
+        "ssim": 0.98621,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.8174
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.325,
+        "ssim": 0.98583,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.82258
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.15,
+        "ssim": 0.98543,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.82437
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 37.604
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.63235,
+        "ber": 0.11963,
+        "psnr_attack": 20.317
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.48831,
+        "ber": 0.21021,
+        "psnr_attack": 18.28
+      },
+      {
+        "attack": "cropping",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 25.123
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.28008,
+        "ber": 0.42529,
+        "psnr_attack": 13.881
+      }
+    ]
+  },
+  {
+    "name": "houses",
+    "best_alpha": 0.26,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 51.989,
+        "ssim": 0.99945,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.1453
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 51.972,
+        "ssim": 0.99945,
+        "nc_no_attack": 0.08422,
+        "ber_no_attack": 0.10254,
+        "nc_mean_attacks": 0.17557
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.697,
+        "ssim": 0.99942,
+        "nc_no_attack": 0.54794,
+        "ber_no_attack": 0.07227,
+        "nc_mean_attacks": 0.35931
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.184,
+        "ssim": 0.99938,
+        "nc_no_attack": 0.95774,
+        "ber_no_attack": 0.00854,
+        "nc_mean_attacks": 0.53944
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 50.87,
+        "ssim": 0.99937,
+        "nc_no_attack": 0.96389,
+        "ber_no_attack": 0.00732,
+        "nc_mean_attacks": 0.5574
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.363,
+        "ssim": 0.99933,
+        "nc_no_attack": 0.97,
+        "ber_no_attack": 0.0061,
+        "nc_mean_attacks": 0.57266
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.413,
+        "ssim": 0.99924,
+        "nc_no_attack": 0.97122,
+        "ber_no_attack": 0.00586,
+        "nc_mean_attacks": 0.59294
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.924,
+        "ssim": 0.99922,
+        "nc_no_attack": 0.97486,
+        "ber_no_attack": 0.00513,
+        "nc_mean_attacks": 0.61101
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.399,
+        "ssim": 0.99917,
+        "nc_no_attack": 0.97607,
+        "ber_no_attack": 0.00488,
+        "nc_mean_attacks": 0.60597
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.43,
+        "ssim": 0.99903,
+        "nc_no_attack": 0.97486,
+        "ber_no_attack": 0.00513,
+        "nc_mean_attacks": 0.62371
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.955,
+        "ssim": 0.99899,
+        "nc_no_attack": 0.97728,
+        "ber_no_attack": 0.00464,
+        "nc_mean_attacks": 0.6229
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.48,
+        "ssim": 0.99894,
+        "nc_no_attack": 0.97849,
+        "ber_no_attack": 0.00439,
+        "nc_mean_attacks": 0.62892
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.611,
+        "ssim": 0.99876,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.64173
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 45.187,
+        "ssim": 0.9987,
+        "nc_no_attack": 0.97849,
+        "ber_no_attack": 0.00439,
+        "nc_mean_attacks": 0.63511
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.783,
+        "ssim": 0.99864,
+        "nc_no_attack": 0.9797,
+        "ber_no_attack": 0.00415,
+        "nc_mean_attacks": 0.6449
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 44.049,
+        "ssim": 0.99842,
+        "nc_no_attack": 0.9797,
+        "ber_no_attack": 0.00415,
+        "nc_mean_attacks": 0.64787
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.653,
+        "ssim": 0.99835,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.65889
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 43.296,
+        "ssim": 0.99828,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.65932
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.707,
+        "ssim": 0.99804,
+        "nc_no_attack": 0.9797,
+        "ber_no_attack": 0.00415,
+        "nc_mean_attacks": 0.66732
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.313,
+        "ssim": 0.99794,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.67063
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 42,
+        "ssim": 0.99787,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.67621
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.531,
+        "ssim": 0.99763,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.68486
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 41.139,
+        "ssim": 0.99749,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.6901
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.858,
+        "ssim": 0.9974,
+        "nc_no_attack": 0.9797,
+        "ber_no_attack": 0.00415,
+        "nc_mean_attacks": 0.69585
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.477,
+        "ssim": 0.99718,
+        "nc_no_attack": 0.98091,
+        "ber_no_attack": 0.00391,
+        "nc_mean_attacks": 0.70348
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 40.095,
+        "ssim": 0.99698,
+        "nc_no_attack": 0.9797,
+        "ber_no_attack": 0.00415,
+        "nc_mean_attacks": 0.70836
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.845,
+        "ssim": 0.99688,
+        "nc_no_attack": 0.97849,
+        "ber_no_attack": 0.00439,
+        "nc_mean_attacks": 0.70506
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.52,
+        "ssim": 0.99668,
+        "nc_no_attack": 0.97728,
+        "ber_no_attack": 0.00464,
+        "nc_mean_attacks": 0.71057
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 39.16,
+        "ssim": 0.99644,
+        "nc_no_attack": 0.97728,
+        "ber_no_attack": 0.00464,
+        "nc_mean_attacks": 0.72232
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.929,
+        "ssim": 0.99633,
+        "nc_no_attack": 0.97728,
+        "ber_no_attack": 0.00464,
+        "nc_mean_attacks": 0.7216
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.653,
+        "ssim": 0.99614,
+        "nc_no_attack": 0.97728,
+        "ber_no_attack": 0.00464,
+        "nc_mean_attacks": 0.72782
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.321,
+        "ssim": 0.99587,
+        "nc_no_attack": 0.97728,
+        "ber_no_attack": 0.00464,
+        "nc_mean_attacks": 0.72949
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 38.097,
+        "ssim": 0.99574,
+        "nc_no_attack": 0.97607,
+        "ber_no_attack": 0.00488,
+        "nc_mean_attacks": 0.74183
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.861,
+        "ssim": 0.99556,
+        "nc_no_attack": 0.97607,
+        "ber_no_attack": 0.00488,
+        "nc_mean_attacks": 0.74327
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.553,
+        "ssim": 0.99528,
+        "nc_no_attack": 0.97607,
+        "ber_no_attack": 0.00488,
+        "nc_mean_attacks": 0.74285
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.342,
+        "ssim": 0.99513,
+        "nc_no_attack": 0.97607,
+        "ber_no_attack": 0.00488,
+        "nc_mean_attacks": 0.75088
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 37.13,
+        "ssim": 0.99495,
+        "nc_no_attack": 0.97607,
+        "ber_no_attack": 0.00488,
+        "nc_mean_attacks": 0.75485
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.851,
+        "ssim": 0.99467,
+        "nc_no_attack": 0.97486,
+        "ber_no_attack": 0.00513,
+        "nc_mean_attacks": 0.75244
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.642,
+        "ssim": 0.99449,
+        "nc_no_attack": 0.97486,
+        "ber_no_attack": 0.00513,
+        "nc_mean_attacks": 0.75869
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.452,
+        "ssim": 0.99432,
+        "nc_no_attack": 0.97486,
+        "ber_no_attack": 0.00513,
+        "nc_mean_attacks": 0.7608
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 36.202,
+        "ssim": 0.99404,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.76587
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.999,
+        "ssim": 0.99384,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.76484
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.822,
+        "ssim": 0.99366,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.76622
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.598,
+        "ssim": 0.99339,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.77259
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.4,
+        "ssim": 0.99317,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.7777
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 35.238,
+        "ssim": 0.99299,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.77789
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 35.035,
+        "ssim": 0.99273,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.78465
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.845,
+        "ssim": 0.99249,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.78151
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.688,
+        "ssim": 0.99231,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.78582
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.505,
+        "ssim": 0.99205,
+        "nc_no_attack": 0.97365,
+        "ber_no_attack": 0.00537,
+        "nc_mean_attacks": 0.78795
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 0.9797,
+        "ber": 0.00415,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 0.95526,
+        "ber": 0.00903,
+        "psnr_attack": 30.307
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.58911,
+        "ber": 0.10059,
+        "psnr_attack": 20.494
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.45929,
+        "ber": 0.21484,
+        "psnr_attack": 18.042
+      },
+      {
+        "attack": "cropping",
+        "nc": 0.9797,
+        "ber": 0.00415,
+        "psnr_attack": 26.08
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.26583,
+        "ber": 0.44971,
+        "psnr_attack": 10.756
+      }
+    ]
+  },
+  {
+    "name": "kiel",
+    "best_alpha": 0.25,
+    "curva_alpha": [
+      {
+        "alpha": 0.01,
+        "psnr": 52.019,
+        "ssim": 0.99873,
+        "nc_no_attack": 0,
+        "ber_no_attack": 0.10327,
+        "nc_mean_attacks": 0.16752
+      },
+      {
+        "alpha": 0.02,
+        "psnr": 52,
+        "ssim": 0.99872,
+        "nc_no_attack": 0.14586,
+        "ber_no_attack": 0.10107,
+        "nc_mean_attacks": 0.2179
+      },
+      {
+        "alpha": 0.03,
+        "psnr": 51.718,
+        "ssim": 0.99868,
+        "nc_no_attack": 0.53924,
+        "ber_no_attack": 0.07324,
+        "nc_mean_attacks": 0.375
+      },
+      {
+        "alpha": 0.04,
+        "psnr": 51.132,
+        "ssim": 0.99863,
+        "nc_no_attack": 0.99763,
+        "ber_no_attack": 0.00049,
+        "nc_mean_attacks": 0.58071
+      },
+      {
+        "alpha": 0.05,
+        "psnr": 50.892,
+        "ssim": 0.99862,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.58778
+      },
+      {
+        "alpha": 0.06,
+        "psnr": 50.329,
+        "ssim": 0.99857,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.60359
+      },
+      {
+        "alpha": 0.07,
+        "psnr": 49.276,
+        "ssim": 0.99844,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63362
+      },
+      {
+        "alpha": 0.08,
+        "psnr": 48.852,
+        "ssim": 0.99842,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.63999
+      },
+      {
+        "alpha": 0.09,
+        "psnr": 48.283,
+        "ssim": 0.99835,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.64941
+      },
+      {
+        "alpha": 0.1,
+        "psnr": 47.27,
+        "ssim": 0.99816,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66436
+      },
+      {
+        "alpha": 0.11,
+        "psnr": 46.808,
+        "ssim": 0.99811,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.66795
+      },
+      {
+        "alpha": 0.12,
+        "psnr": 46.3,
+        "ssim": 0.99804,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67502
+      },
+      {
+        "alpha": 0.13,
+        "psnr": 45.444,
+        "ssim": 0.99778,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.67652
+      },
+      {
+        "alpha": 0.14,
+        "psnr": 45.001,
+        "ssim": 0.99772,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68863
+      },
+      {
+        "alpha": 0.15,
+        "psnr": 44.566,
+        "ssim": 0.99763,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.68823
+      },
+      {
+        "alpha": 0.16,
+        "psnr": 43.851,
+        "ssim": 0.99734,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.69881
+      },
+      {
+        "alpha": 0.17,
+        "psnr": 43.437,
+        "ssim": 0.99725,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70912
+      },
+      {
+        "alpha": 0.18,
+        "psnr": 43.06,
+        "ssim": 0.99714,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.70965
+      },
+      {
+        "alpha": 0.19,
+        "psnr": 42.47,
+        "ssim": 0.99681,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72198
+      },
+      {
+        "alpha": 0.2,
+        "psnr": 42.081,
+        "ssim": 0.9967,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.72301
+      },
+      {
+        "alpha": 0.21,
+        "psnr": 41.743,
+        "ssim": 0.99658,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7291
+      },
+      {
+        "alpha": 0.22,
+        "psnr": 41.279,
+        "ssim": 0.99624,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.73421
+      },
+      {
+        "alpha": 0.23,
+        "psnr": 40.893,
+        "ssim": 0.99609,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74164
+      },
+      {
+        "alpha": 0.24,
+        "psnr": 40.588,
+        "ssim": 0.99595,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.74403
+      },
+      {
+        "alpha": 0.25,
+        "psnr": 40.235,
+        "ssim": 0.99567,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.75268
+      },
+      {
+        "alpha": 0.26,
+        "psnr": 39.837,
+        "ssim": 0.99542,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76143
+      },
+      {
+        "alpha": 0.27,
+        "psnr": 39.56,
+        "ssim": 0.99527,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76392
+      },
+      {
+        "alpha": 0.28,
+        "psnr": 39.266,
+        "ssim": 0.99503,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.76809
+      },
+      {
+        "alpha": 0.29,
+        "psnr": 38.893,
+        "ssim": 0.99471,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.7764
+      },
+      {
+        "alpha": 0.3,
+        "psnr": 38.639,
+        "ssim": 0.99454,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78104
+      },
+      {
+        "alpha": 0.31,
+        "psnr": 38.375,
+        "ssim": 0.99431,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.78086
+      },
+      {
+        "alpha": 0.32,
+        "psnr": 38.036,
+        "ssim": 0.99396,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79007
+      },
+      {
+        "alpha": 0.33,
+        "psnr": 37.8,
+        "ssim": 0.99377,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79537
+      },
+      {
+        "alpha": 0.34,
+        "psnr": 37.565,
+        "ssim": 0.99354,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.79723
+      },
+      {
+        "alpha": 0.35,
+        "psnr": 37.256,
+        "ssim": 0.99317,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80523
+      },
+      {
+        "alpha": 0.36,
+        "psnr": 37.034,
+        "ssim": 0.99297,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.80766
+      },
+      {
+        "alpha": 0.37,
+        "psnr": 36.818,
+        "ssim": 0.99275,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81062
+      },
+      {
+        "alpha": 0.38,
+        "psnr": 36.537,
+        "ssim": 0.99236,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.8148
+      },
+      {
+        "alpha": 0.39,
+        "psnr": 36.33,
+        "ssim": 0.99215,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.81872
+      },
+      {
+        "alpha": 0.4,
+        "psnr": 36.131,
+        "ssim": 0.99192,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.82181
+      },
+      {
+        "alpha": 0.41,
+        "psnr": 35.875,
+        "ssim": 0.99153,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83046
+      },
+      {
+        "alpha": 0.42,
+        "psnr": 35.678,
+        "ssim": 0.9913,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83021
+      },
+      {
+        "alpha": 0.43,
+        "psnr": 35.49,
+        "ssim": 0.99107,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83002
+      },
+      {
+        "alpha": 0.44,
+        "psnr": 35.266,
+        "ssim": 0.99069,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83621
+      },
+      {
+        "alpha": 0.45,
+        "psnr": 35.069,
+        "ssim": 0.99044,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.83453
+      },
+      {
+        "alpha": 0.46,
+        "psnr": 34.895,
+        "ssim": 0.9902,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.84045
+      },
+      {
+        "alpha": 0.47,
+        "psnr": 34.701,
+        "ssim": 0.98986,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.84349
+      },
+      {
+        "alpha": 0.48,
+        "psnr": 34.501,
+        "ssim": 0.98958,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.84396
+      },
+      {
+        "alpha": 0.49,
+        "psnr": 34.337,
+        "ssim": 0.98933,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.85134
+      },
+      {
+        "alpha": 0.5,
+        "psnr": 34.167,
+        "ssim": 0.98903,
+        "nc_no_attack": 1,
+        "ber_no_attack": 0,
+        "nc_mean_attacks": 0.84618
+      }
+    ],
+    "matrice": [
+      {
+        "attack": "no_attack",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 99
+      },
+      {
+        "attack": "jpeg",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 29.871
+      },
+      {
+        "attack": "gaussian",
+        "nc": 0.65655,
+        "ber": 0.09595,
+        "psnr_attack": 20.281
+      },
+      {
+        "attack": "salt_pepper",
+        "nc": 0.56001,
+        "ber": 0.16187,
+        "psnr_attack": 18.497
+      },
+      {
+        "attack": "cropping",
+        "nc": 1,
+        "ber": 0,
+        "psnr_attack": 23.648
+      },
+      {
+        "attack": "rotation",
+        "nc": 0.286,
+        "ber": 0.32446,
+        "psnr_attack": 14.835
+      }
+    ]
+  }
+]

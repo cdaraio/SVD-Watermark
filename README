@@ -1,0 +1,31 @@
+# Setup del Progetto
+
+## Requisiti
+
+* **Python 3.8+**
+* **Node.js**
+
+---
+
+## Avvio del Backend
+
+Nella cartella principale del progetto:
+
+```bash
+uvicorn main:app --reload
+```
+
+
+---
+
+## Avvio del Frontend
+
+Nella cartella `frontend`:
+
+```bash
+npm install
+npm run dev
+```
+
+---
+

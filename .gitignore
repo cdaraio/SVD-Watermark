@@ -1,0 +1,13 @@
+# Front-end (React/Node)
+node_modules/
+dist/
+.env
+
+# Back-end (Python)
+__pycache__/
+venv/
+env/
+*.pyc
+
+# Mac OS
+.DS_Store
