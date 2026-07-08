@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import {
   BarChart2, Play, AlertCircle, CheckCircle2,
-  Download, ChevronDown, ChevronUp, Info, Loader2
+  Download, ChevronDown, ChevronUp, Info, Loader2, GitCompare
 } from "lucide-react";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
@@ -305,6 +305,116 @@ function AnalisiNoAttack({ risultati }) {
   );
 }
 
+// ─── Confronto con metodi classici (LSB, DCT, DWT, SVD classica) ────────────
+const METODO_COLORS = {
+  svd_blocchi: "#00ffe0",
+  lsb: "#ff6b6b",
+  dct: "#ffd166",
+  dwt: "#a29bfe",
+  svd_classica: "#74b9ff",
+};
+
+function _celleNC(v) {
+  if (v >= 0.9) return "bg-emerald-500/25 text-emerald-300";
+  if (v >= 0.7) return "bg-amber-500/20 text-amber-300";
+  if (v >= 0.5) return "bg-orange-500/20 text-orange-300";
+  return "bg-red-500/20 text-red-400";
+}
+
+function ConfrontoMetodi({ metodi }) {
+  if (!metodi || metodi.length === 0) return null;
+  const attacchi = Object.keys(ATTACK_LABELS);
+  const psnrRiferimento = metodi.find(m => m.method === "svd_blocchi")?.psnr;
+
+  return (
+    <div className="mt-4 rounded-xl bg-[#0a0a0a] border border-panel-border overflow-hidden">
+      <div className="flex items-start gap-3 px-4 pt-4 pb-3">
+        <GitCompare className="w-3.5 h-3.5 text-cyber/60 mt-0.5 shrink-0" />
+        <p className="text-[11px] text-zinc-500 leading-relaxed">
+          Ogni metodo è calibrato allo stesso PSNR di embedding del progetto
+          (~{psnrRiferimento?.toFixed(1)} dB), per confrontare la robustezza (NC) a parità di invisibilità, ad eccezione del metodo spaziale LSB la cui intensità non è matematicamente scalabile per costruzione.
+          Passa il mouse su una cella per NC, BER e PSNR completi.
+        </p>
+      </div>
+
+      {/* Padding ridotto qui (px-2 invece di px-4) per dare più spazio alla tabella */}
+      <div className="overflow-x-auto px-2 pb-2">
+        <table className="w-full text-xs border-collapse">
+          <thead>
+            <tr>
+              <th className="text-left text-zinc-500 pb-2 pr-2 pl-2 font-medium whitespace-nowrap">Metodo</th>
+              {attacchi.map(a => (
+                <th key={a} className="text-center text-zinc-500 pb-2 px-1 font-medium whitespace-nowrap text-[10px]">
+                  {ATTACK_LABELS[a]}
+                </th>
+              ))}
+              <th className="text-center text-zinc-500 pb-2 pl-2 font-medium border-l border-zinc-800/70 whitespace-nowrap">α</th>
+              <th className="text-center text-zinc-500 pb-2 px-1.5 font-medium whitespace-nowrap">PSNR</th>
+              <th className="text-center text-zinc-500 pb-2 pl-1.5 pr-2 font-medium whitespace-nowrap">Tempo</th>
+            </tr>
+          </thead>
+          <tbody>
+            {metodi.map((m, i) => (
+              <tr key={i} className="border-t border-zinc-800/50">
+                <td className="py-1.5 pr-2 pl-2 font-medium text-zinc-300 whitespace-nowrap text-[11px]">
+                  <span className="flex items-center gap-1.5">
+                    <span
+                      className="w-2 h-2 rounded-full inline-block shrink-0"
+                      style={{ background: METODO_COLORS[m.method] ?? "#888" }}
+                    />
+                    {m.label}
+                  </span>
+                </td>
+
+                {m.errore ? (
+                  <td colSpan={attacchi.length + 3} className="py-1.5 text-center text-red-400 text-[11px]">
+                    {m.errore}
+                  </td>
+                ) : (
+                  <>
+                    {attacchi.map(a => {
+                      const d = m.matrice?.find(x => x.attack === a);
+                      if (!d) return <td key={a} className="py-1 px-1 text-center text-zinc-700">—</td>;
+                      return (
+                        <td key={a} className="py-1 px-1 text-center">
+                          <span
+                            title={`NC ${d.nc.toFixed(3)}  ·  BER ${d.ber.toFixed(3)}  ·  PSNR ${d.psnr_attack.toFixed(1)} dB`}
+                            /* w-11 ridotto a w-9, padding ridotto */
+                            className={`inline-block w-9 px-1 py-0.5 rounded text-[10px] font-bold tabular-nums cursor-help ${_celleNC(d.nc)}`}
+                          >
+                            {d.nc.toFixed(2)}
+                          </span>
+                        </td>
+                      );
+                    })}
+                    <td className="py-1 pl-2 text-center border-l border-zinc-800/70 text-zinc-400 whitespace-nowrap text-[11px]">
+                      {m.alpha}
+                    </td>
+                    <td className="py-1 px-1.5 text-center text-zinc-400 whitespace-nowrap text-[11px]">
+                      {m.psnr?.toFixed(1)} dB
+                    </td>
+                    <td className="py-1 pl-1.5 pr-2 text-center text-zinc-500 whitespace-nowrap text-[11px]">
+                      {(m.embed_time_ms + m.extract_time_ms).toFixed(1)} ms
+                    </td>
+                  </>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 px-4 py-3 border-t border-zinc-800/50 text-[10px] text-zinc-600">
+        <span className="text-zinc-500">NC:</span>
+        <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-emerald-500/70" />&ge; 0.90 ottimo</span>
+        <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-amber-500/70" />&ge; 0.70 buono</span>
+        <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-orange-500/70" />&ge; 0.50 debole</span>
+        <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-red-500/70" />&lt; 0.50 critico</span>
+      </div>
+    </div>
+  );
+}
+
 // ─── COMPONENTE PRINCIPALE VISTABATCH ────────────────────────────────────────
 export default function VistaBatch() {
   const [sorgente, setSorgente] = useState("sipi"); // "sipi" | "zip"
@@ -316,7 +426,8 @@ export default function VistaBatch() {
   const [risultati, setRisultati] = useState([]);
   const [errore, setErrore] = useState(null);
   const [viewImg, setViewImg] = useState(null);
-  const [totaleDaElaborare, setTotaleDaElaborare] = useState(0); // <-- AGGIUNTO PER LA PERCENTUALE ZIP
+  const [mostraConfronto, setMostraConfronto] = useState(false);
+  const [totaleDaElaborare, setTotaleDaElaborare] = useState(0); // PER LA PERCENTUALE ZIP
   const abortRef = useRef(null);
 
   const bottoneAttivo = fileWatermark && (sorgente === "sipi" || fileZip) && stato !== "running";
@@ -701,6 +812,24 @@ export default function VistaBatch() {
                     </tbody>
                   </table>
                 </div>
+
+                {risultatoSelezionato.confronto_metodi && (
+                  <div className="col-span-2">
+                    <button
+                      onClick={() => setMostraConfronto(v => !v)}
+                      className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[#111] border border-panel-border text-zinc-400 hover:text-cyber hover:border-cyber/40 text-xs font-medium transition-colors"
+                    >
+                      <GitCompare className="w-3.5 h-3.5" />
+                      {mostraConfronto
+                        ? "Nascondi confronto con altri metodi"
+                        : "Confronta con altri metodi (LSB, DCT, DWT, SVD classica)"}
+                    </button>
+
+                    {mostraConfronto && (
+                      <ConfrontoMetodi metodi={risultatoSelezionato.confronto_metodi} />
+                    )}
+                  </div>
+                )}
               </div>
             )}
           </Section>

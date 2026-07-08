@@ -2,7 +2,8 @@ from __future__ import annotations
 import base64
 import io
 import logging
-from typing import Annotated
+import time
+from typing import Annotated,Tuple
 
 import cv2
 import numpy as np
@@ -12,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from core.batch import router as batch_router
 
-from core.svd import embed_watermark, extract_watermark
+from core.svd import DIM_BLOCCO, embed_watermark, extract_watermark
 from core.attacchi import (
     comprimi_jpeg,
     aggiungi_rumore_gaussiano,
@@ -48,16 +49,29 @@ app.add_middleware(
 app.include_router(batch_router)
 
 def _decode_upload(data: bytes) -> NDArray[np.uint8]:
-    # Decodifica i byte caricati in un array numpy (scala di grigi)
     arr = np.frombuffer(data, dtype=np.uint8)
-    img = cv2.imdecode(arr, cv2.IMREAD_GRAYSCALE)
+    # 1. Leggiamo preservando i canali (incluso Alpha se c'è)
+    img = cv2.imdecode(arr, cv2.IMREAD_UNCHANGED)
     if img is None:
-        raise HTTPException(
-            status_code=422,
-            detail="Impossibile decodificare l'immagine. Assicurati che sia PNG, JPEG o BMP.",
-        )
+        raise HTTPException(status_code=422, detail="Immagine non valida.")
+        
+    # 2. Se l'immagine ha trasparenza (4 canali)
+    if len(img.shape) == 3 and img.shape[2] == 4:
+        bgr = img[:, :, :3]
+        alpha = img[:, :, 3]
+        sfondo = np.ones_like(bgr, dtype=np.uint8) * 255
+        
+        alpha_factor = alpha.astype(np.float32) / 255.0
+        alpha_factor = np.stack([alpha_factor]*3, axis=-1)
+        
+        img_fusa = bgr * alpha_factor + sfondo * (1.0 - alpha_factor)
+        return cv2.cvtColor(img_fusa.astype(np.uint8), cv2.COLOR_BGR2GRAY)
+        
+    # 3. Se l'immagine è RGB normale (3 canali)
+    elif len(img.shape) == 3 and img.shape[2] == 3:
+        return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        
     return img
-
 
 def _img_to_b64(img: NDArray[np.uint8]) -> str:
     # Trasforma l'immagine numpy in una stringa base64 da mandare al frontend
@@ -90,15 +104,16 @@ def _b64_to_array(b64: str) -> NDArray[np.float64]:
 async def embed_endpoint(
     host_image: UploadFile = File(...),
     watermark_image: UploadFile = File(...),
-    alpha: float = Form(0.1),
+    alpha: float = Form(...),
 ):
     host_bytes = await host_image.read()
     wm_bytes   = await watermark_image.read()
     
     host = _decode_upload(host_bytes)
     wm   = _decode_upload(wm_bytes)
-    
-    # 1. IL BUTTAFUORI: Calcoliamo la griglia esatta
+    if host.shape != (512, 512):
+        host = cv2.resize(host, (512, 512), interpolation=cv2.INTER_AREA)
+    # 1. Calcoliamo la griglia esatta
     alt, larg = host.shape
     n_righe, n_colonne = alt // DIM_BLOCCO, larg // DIM_BLOCCO
     
@@ -106,22 +121,24 @@ async def embed_endpoint(
     wm_resized = cv2.resize(wm, (n_colonne, n_righe), interpolation=cv2.INTER_AREA)
     
     # 3. Forziamo il logo a diventare bit puri (0 o 255).
-    # Usiamo THRESH_OTSU_INV per separare automaticamente il logo dallo sfondo
-    # e far sì che il logo abbia energia (255) e lo sfondo sia spento (0).
-    _, wm_binario = cv2.threshold(wm_resized, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    _, wm_binario = cv2.threshold(wm_resized, 127, 255, cv2.THRESH_BINARY_INV)
 
-    # Ora passiamo alla SVD una matrice perfetta (come la tua scacchiera)
-    watermarked, original_svs = embed_watermark(host, wm_binario, alpha=alpha)
+    # passiamo alla SVD una matrice perfetta  
+    t0 = time.perf_counter()
+    watermarked, chiave = embed_watermark(host, wm_binario, alpha=alpha)
+    embed_time_ms = (time.perf_counter() - t0) * 1000.0
 
     psnr = calcola_psnr(host, watermarked)
     ssim = calcola_ssim(host, watermarked)
+    
 
     return JSONResponse(
         content={
             "watermarked_image": _img_to_b64(watermarked),
-            "key":               _array_to_b64(original_svs),
+            "key":               _array_to_b64(chiave),
             "psnr":              round(psnr, 4),
             "ssim":              round(ssim, 6),
+            "embed_time_ms": round(embed_time_ms, 3),
         }
     )
 
@@ -199,7 +216,8 @@ async def attack_endpoint(
 async def extract_endpoint(
     watermarked_image: UploadFile = File(...),
     original_watermark: UploadFile = File(...),
-    key: UploadFile = File(...)
+    key: UploadFile = File(...),
+    alpha: float = Form(...),
 ):
     wm_bytes = await watermarked_image.read()
     orig_wm_bytes = await original_watermark.read()
@@ -210,19 +228,34 @@ async def extract_endpoint(
     wm_img  = _decode_upload(wm_bytes)
     orig_wm = _decode_upload(orig_wm_bytes)
 
-    original_svs = _b64_to_array(key_str)
-    n_righe, n_colonne = original_svs.shape
+    chiave = _b64_to_array(key_str)
+    logger.debug("Forma della chiave caricata: %s", chiave.shape)
+
+    # La chiave ha shape (n_righe, n_colonne) se contiene solo original_svs,
+    # oppure (n_righe, n_colonne, 2) come restituita da embed_watermark: i 2
+    # canali sono SEMPRE l'ULTIMA dimensione (np.stack(..., axis=-1) in svd.py),
+    # MAI la prima.
+    if chiave.ndim == 2:
+        n_righe, n_colonne = chiave.shape
+    elif chiave.ndim == 3:
+        n_righe, n_colonne, _n_canali = chiave.shape
+    else:
+        raise HTTPException(
+            status_code=422,
+            detail=f"Formato chiave non supportato: shape {chiave.shape}"
+        )
     
-    # 1. Riapplichiamo all'originale lo STESSO IDENTICO trattamento fatto nell'embed
+    # 1. Riapplichiamo all'originale lo STESSO IDENTICO trattamento fatto nell'embed (NIENTE OTSU, SOGLIA FISSA 127)
     orig_wm_resized = cv2.resize(orig_wm, (n_colonne, n_righe), interpolation=cv2.INTER_AREA)
-    _, orig_wm_binario = cv2.threshold(orig_wm_resized, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    _, orig_wm_binario = cv2.threshold(orig_wm_resized, 127, 255, cv2.THRESH_BINARY_INV)
     
-    # 2. Estraiamo il segnale matematico (esce tra 0 e 255 ma con delle sfumature dovute al rumore)
-    # L'estrazione rileva l'energia, quindi non serve INV qui.
-    extracted = extract_watermark(wm_img, original_svs, alpha=0.1) # Usa il tuo alpha
+    # 2. Estraiamo il segnale matematico e calcoliamo il tempo
+    t0 = time.perf_counter()
+    extracted = extract_watermark(wm_img, chiave, alpha=alpha)
+    extract_time_ms = (time.perf_counter() - t0) * 1000.0
     
-    # 3. Forziamo anche il risultato estratto a essere Bit Puro
-    _, extracted_binario = cv2.threshold(extracted, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    # 3. Forziamo anche il risultato estratto a essere Bit Puro (SOGLIA FISSA 127)
+    _, extracted_binario = cv2.threshold(extracted, 127, 255, cv2.THRESH_BINARY)
 
     # 4. Confronto matematico perfetto (Bianco/Nero vs Bianco/Nero)
     nc  = calcola_nc(orig_wm_binario, extracted_binario)
@@ -233,5 +266,6 @@ async def extract_endpoint(
             "extracted_watermark": _img_to_b64(extracted_binario),
             "nc": round(float(nc), 6),
             "ber": round(float(ber), 6),
+            "extract_time_ms": round(extract_time_ms, 3)
         }
     )
