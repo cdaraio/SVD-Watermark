@@ -1,24 +1,4 @@
 from __future__ import annotations
-
-"""
-Implementazioni "didattiche" di 4 metodi di watermarking classici,
-usate SOLO per contestualizzare/confrontare il contributo del progetto
-(SVD a blocchi, vedi core/svd.py) con le tecniche più note in letteratura:
-
-    - LSB  (Least Significant Bit)
-    - DCT  (Discrete Cosine Transform, block-based, stile JPEG)
-    - DWT  (Discrete Wavelet Transform, Haar 1 livello, fatta a mano)
-    - SVD classica (whole-image, metodo Liu & Tan 2002)
-
-Ogni metodo espone due funzioni con la stessa "forma" già usata in core/svd.py:
-
-    embed_xxx(host, watermark, alpha) -> (watermarked_uint8, chiave)
-    extract_xxx(image, chiave, alpha) -> extracted_uint8 (0/255, grezzo)
-
-così da poter riusare calcola_psnr / calcola_ssim / calcola_nc / calcola_ber
-di core/metriche.py senza modifiche.
-"""
-
 from typing import Tuple
 import numpy as np
 from numpy.typing import NDArray
